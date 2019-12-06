@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 2113560}
   m_Layer: 9
   m_Name: "Ground\x13"
-  m_TagString: Untagged
+  m_TagString: grd
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,7 +763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1408088849
 RectTransform:
   m_ObjectHideFlags: 0
@@ -797,7 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1777,7 +1777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021517721}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.06, y: 3.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1798,6 +1798,10 @@ MonoBehaviour:
   rb: {fileID: 2021517722}
   force: 100
   sideforce: 20
+  up: 500
+  count: 0
+  player: {fileID: 2021517726}
+  movement: {fileID: 2021517727}
 --- !u!114 &2021517728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2013,16 +2017,16 @@ RectTransform:
   m_GameObject: {fileID: 2137159637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8448, y: 0.8448, z: 0.8448}
   m_Children: []
   m_Father: {fileID: 974419565}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 63}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -159, y: 99}
+  m_SizeDelta: {x: 163.46, y: 68.85}
+  m_Pivot: {x: 0.50000006, y: 0.5000002}
 --- !u!114 &2137159639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,13 +2054,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: SCORE
 --- !u!222 &2137159640
 CanvasRenderer:
   m_ObjectHideFlags: 0

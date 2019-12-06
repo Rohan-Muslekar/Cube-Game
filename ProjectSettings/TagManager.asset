@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - "GroundTag\x13"
+  - grd
   layers:
   - Default
   - TransparentFX
